@@ -24,6 +24,9 @@ public class client {
                     String info = "I'm "+i+++"-th information from client";
                     buffer.clear();
                     buffer.put(info.getBytes());
+                    /**
+                     * buffer读写转换全靠它来实现
+                     */
                     buffer.flip();
                     while(buffer.hasRemaining()){
                         System.out.println(buffer);
