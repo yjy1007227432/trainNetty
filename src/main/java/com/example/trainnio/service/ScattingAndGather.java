@@ -12,8 +12,7 @@ public class ScattingAndGather
     public static void main(String args[]){
         gather();
     }
-    public static void gather()
-    {
+    public static void gather() {
         ByteBuffer header = ByteBuffer.allocate(10);
         ByteBuffer body = ByteBuffer.allocate(10);
         byte [] b1 = {'0', '1'};

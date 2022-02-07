@@ -20,8 +20,7 @@ class TrainNioApplicationTests {
             in = new BufferedInputStream(new FileInputStream("src/nomal_io.txt"));
             byte [] buf = new byte[1024];
             int bytesRead = in.read(buf);
-            while(bytesRead != -1)
-            {
+            while(bytesRead != -1) {
                 for(int i=0;i<bytesRead;i++)
                     System.out.print((char)buf[i]);
                 bytesRead = in.read(buf);
@@ -72,6 +71,4 @@ class TrainNioApplicationTests {
             }
         }
     }
-
-
 }
